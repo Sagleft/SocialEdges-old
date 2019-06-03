@@ -1,0 +1,38 @@
+<html>
+	{% include 'head.tmpl' %}
+	<body>
+		{% set version = '1.0.42' %}
+		{% include 'parts/preloader.tmpl' %}
+		<div id="WebGL_output"></div>
+		<div id="pointInfo_container">
+			<div class="row">
+				<div class="col-md-5" style="text-align: right;">
+					<img src="" class="img-circle" id="pointInfo_userAvatar"/>
+				</div>
+				<div class="col-md-7" style="text-align: left;">
+					<span id="pointInfo_userNick"></span><br/>
+					<span id="pintInfo_userID"></span>
+				</div>
+			</div>
+		</div>
+		<script src="/js/three.js"></script>
+		<script src="/js/controls/OrbitControls.js"></script>
+		<script src="/js/lines/LineSegmentsGeometry.js"></script>
+		<script src="/js/lines/LineGeometry.js"></script>
+		<script src="/js/lines/LineMaterial.js"></script>
+		<script src="/js/lines/LineSegments2.js"></script>
+		<script src="/js/lines/Line2.js"></script>
+		
+		<script src="/js/libs/tween.min.js"></script>
+		
+		{#<script src="/js/renderers/CSS2DRenderer.js"></script>#}
+		<script src="/js/renderers/CSS3DRenderer.js"></script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		
+		<script src="/js/functions.js?v={{ version }}"></script>
+		<script src="/js/loader.js?v={{ version }}"></script>
+		<script src="/js/events.js?v={{ version }}"></script>
+	</body>
+</html>
